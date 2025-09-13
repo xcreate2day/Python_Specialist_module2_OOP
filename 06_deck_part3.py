@@ -50,7 +50,7 @@ class Deck:
         return self.__str__()
 
     # def __getitem__(self, index):
-        # return self.cards[index]
+
 
     def draw(self, x):
         # Принцип работы данного метода прописан в 00_task_deck.md
@@ -104,3 +104,4 @@ if __name__ == '__main__':
 
 
 # Список ВСЕХ magic-методов см. тут: http://pythonworld.ru/osnovy/peregruzka-operatorov.html
+
