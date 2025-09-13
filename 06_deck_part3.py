@@ -44,8 +44,8 @@ class Deck:
         self.cards = [Card(value, suit) for suit in SUITS for value in VALUES]
 
     def __str__(self):
-        return f'deck[{len(self.cards)}] {", ".join([str(card) for card in self.cards])}'
-
+        return f'{self.__class__.__name__}[{len(self.cards)}] {", ".join([str(card) for card in self.cards])}'
+            
     def __repr__(self):
         return self.__str__()
 
@@ -104,4 +104,5 @@ if __name__ == '__main__':
 
 
 # Список ВСЕХ magic-методов см. тут: http://pythonworld.ru/osnovy/peregruzka-operatorov.html
+
 
