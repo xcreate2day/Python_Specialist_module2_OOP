@@ -49,8 +49,8 @@ class Deck:
     def __repr__(self):
         return self.__str__()
 
-    # def __getitem__(self, index):
-
+    def __getitem__(self, index):
+        return self.cards[index]
 
     def draw(self, x):
         # Принцип работы данного метода прописан в 00_task_deck.md
@@ -101,9 +101,12 @@ if __name__ == '__main__':
     # 5. Просмотр карты в колоде по ее индексу:
     # __getitem__(self, index):
     # print(deck[6])
-
+    for card in deck[:10]:
+        print(card, end=' ')
+    print()
 
 # Список ВСЕХ magic-методов см. тут: http://pythonworld.ru/osnovy/peregruzka-operatorov.html
+
 
 
 
